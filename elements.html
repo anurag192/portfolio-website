@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --gap: 2rem;
+      --card-radius: 16px;
+      --shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      --primary: #4dabf7;
+      --bg-color: #121212;
+      --card-bg: #1e1e1e;
+      --text-color: #f0f0f0;
+      --text-muted: #cccccc;
+    }
+
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2.75rem;
+      color: var(--primary);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--gap);
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--card-radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1.5rem;
+    }
+
+    .card-content h3 {
+      margin-bottom: 0.75rem;
+      font-size: 1.5rem;
+      color: var(--primary);
+    }
+
+    .card-content p {
+      margin-bottom: 1.25rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .card-content a {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .card-content a:hover {
+      background: #1a73e8;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .card-content h3 {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Featured Projects</h1>
+
+    <div class="grid">
+      <div class="card">
+        <img src="images/chicken.png" alt="Chicken Disease Classification" />
+        <div class="card-content">
+          <h3>Chicken Disease Classification</h3>
+          <p>A deep learning-based web app to detect Coccidiosis in poultry using VGG16, Flask UI, and MLOps tools like DVC.</p>
+          <a href="https://github.com/anurag192/chicken-disease-classification" target="_blank">View Code</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/ae4ba7_5fdd6ada33cb48b186eaef137b8b26b6~mv2.jpg" alt="Student Performance Indicator" />
+        <div class="card-content">
+          <h3>Student Performance Indicator</h3>
+          <p>Predicts student performance using scikit-learn with preprocessing, EDA, and pipeline integration.</p>
+          <a href="https://github.com/anurag192/datascience" target="_blank">View Code</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/Network-Security-Projects.png" alt="Network Security" />
+        <div class="card-content">
+          <h3>Network Security</h3>
+          <p>End-to-end threat detection pipeline using Python, MongoDB, Flask, Docker, and MLflow for tracking.</p>
+          <a href="https://github.com/anurag192/networksecurity/tree/main" target="_blank">View Code</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/wine.jpg" alt="Wine Quality Prediction" />
+        <div class="card-content">
+          <h3>Wine Quality Prediction</h3>
+          <p>Automates wine quality scoring using ML. Dockerized Flask app with CI/CD via GitHub Actions.</p>
+          <a href="https://github.com/anurag192/datascienceproject" target="_blank">View Code</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/lp.png" alt="LinkedIn Post Generator" />
+        <div class="card-content">
+          <h3>LinkedIn Post Generator</h3>
+          <p>Generates human-like LinkedIn posts using Streamlit, Groq LLM, and few-shot learning for consistency.</p>
+          <a href="https://github.com/anurag192/post-generator-linkedin" target="_blank">View Code</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/finance.png" alt="News Research Tool" />
+        <div class="card-content">
+          <h3>News Research Tool</h3>
+          <p>AI-based tool to extract finance insights from articles using LangChain, Google GenAI, and FAISS.</p>
+          <a href="https://github.com/anurag192/finance-bot" target="_blank">View Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

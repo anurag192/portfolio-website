@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Resume - Anurag's Resume</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+  <!-- Core Editorial theme stylesheet -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!-- Font Awesome (for sidebar icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Custom overrides -->
+  <style>
+    /* ----------- GLOBAL COLORS / BACKGROUND ------------ */
+    body{
+      margin:0;
+      background:linear-gradient(135deg,#1f1c2c,#928dab);
+      color:#f0f0f0;
+      font-family:"Segoe UI",sans-serif;
+    }
+
+    /* ----------- MAIN SECTION -------------------------- */
+    h1{
+      color:#fff;
+      font-size:2.5rem;
+      border-bottom:2px solid #ffffff33;
+      padding-bottom:.5rem;
+      margin-bottom:1.5rem;
+    }
+    section{padding:3rem 2rem}
+    .pdf-viewer iframe{
+      border:none;
+      background:#2b2b3a;
+      box-shadow:0 6px 18px rgba(0,0,0,.5);
+      border-radius:10px;
+    }
+    p.resume-description{
+      color:#e0e0e0;
+      background:rgba(30,30,50,.9);
+      padding:1.75rem;
+      border-radius:12px;
+      box-shadow:0 6px 18px rgba(0,0,0,.4);
+      font-size:1.1rem;
+      line-height:1.8;
+      margin-top:2rem;
+      transition:all .3s ease;
+    }
+    p.resume-description:hover{
+      transform:scale(1.01);
+      background:rgba(30,30,60,.95);
+    }
+
+    /* ----------- SIDEBAR -------------------------------- */
+    #sidebar{
+      background:rgba(0,0,0,.6);
+      backdrop-filter:blur(6px);
+    }
+
+    /* Search box */
+    #search input{
+      background:rgba(255,255,255,.1);
+      border:none;
+      color:#fff;
+      padding:.65rem 1rem;
+      border-radius:8px;
+      width:100%;
+    }
+    #search input::placeholder{color:#ccc}
+
+    /* Menu links */
+    #menu ul{
+      list-style:none;
+      padding-left:0;
+    }
+    #menu ul li a{
+      display:flex;
+      align-items:center;
+      padding:.6rem 0;
+      color:#fff;
+      font-weight:600;
+      letter-spacing:.3px;
+      text-decoration:none;
+      transition:color .25s ease;
+    }
+    #menu ul li a i{margin-right:10px;color:#ffd463;}
+    #menu ul li a:hover{color:#ffd463;}
+
+    /* Contact links */
+    .contact li a{color:#fff;text-decoration:none}
+
+    /* Responsive tweak */
+    @media(max-width:768px){
+      h1{font-size:2rem}
+      section{padding:2rem 1rem}
+    }
+  </style>
+</head>
+
+<body class="is-preload">
+  <div id="wrapper">
+
+    <!-- MAIN CONTENT -->
+    <div id="main">
+      <div class="inner">
+        <!-- Optional mini-header (logo / icons) -->
+        <header id="header">
+          <a href="index.html" class="logo">Anurag Portfolio</a>
+          <ul class="icons">
+            <li><a href="https://github.com/anurag192" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            <li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+			<li>
+  <a href="mailto:anurag756singh@gmail.com" class="icon solid fa-envelope">
+    <span class="label">Email</span>
+  </a>
+</li>
+
+           
+          </ul>
+        </header>
+
+        <!-- Resume Section -->
+        <section>
+          <header class="main"><h1>Resume</h1></header>
+
+          <div class="pdf-viewer">
+            <iframe src="Anurag_Resume.pdf" width="100%" height="600px"></iframe>
+          </div>
+
+          <p class="resume-description">
+            Thank you for taking the time to explore my resume. It showcases my academic foundation, hands-on project
+            experience, and technical skills in Data Science, Machine Learning, and Generative AI. I’m deeply passionate
+            about solving meaningful problems using data-driven approaches and continuously strive to grow as a
+            professional. If you believe I could contribute to your team or project, please feel free to reach out
+            through the contact section.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div id="sidebar">
+      <div class="inner">
+
+        <!-- Search -->
+        <section id="search" class="alt">
+          <form method="post" action="#">
+            <input type="text" name="query" id="query" placeholder="Search" />
+          </form>
+        </section>
+
+        <!-- Menu -->
+        <nav id="menu">
+          <header class="major"><h2>Menu</h2></header>
+          <ul>
+            <li>
+              <a href="index.html">
+                <i class="fas fa-home"></i> Homepage
+              </a>
+            </li>
+            <li>
+              <a href="generic.html">
+                <i class="fas fa-file-alt"></i> Resume
+              </a>
+            </li>
+            <li>
+              <a href="elements.html">
+                <i class="fas fa-project-diagram"></i> Projects
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Contact -->
+        <section>
+          <header class="major"><h2>Get in touch</h2></header>
+          <p>I’m open to opportunities, collaborations, or just a good conversation—feel free to reach out if you’d like to discuss a project, ask a question, or simply connect over shared interests.</p>
+          <ul class="contact">
+            <li class="icon solid fa-envelope"><a href="#">anurag756singh@gmail.com</a></li>
+            <li class="icon solid fa-phone">+91-7000859910</li>
+            <li class="icon solid fa-home">Raigarh (Chhattisgarh)<br />496001</li>
+          </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+          <p class="copyright">
+            &copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design:
+            <a href="https://html5up.net">HTML5 UP</a>.
+          </p>
+        </footer>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
